@@ -1,21 +1,21 @@
 class Umi < Formula
   desc "UMI device management tool."
   homepage "https://umi.engineering/cli"
-  version "0.0.4"
+  version "0.0.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/umi-eng/cli/releases/download/v0.0.4/umi-aarch64-apple-darwin.tar.xz"
-      sha256 "07e5f731d4f4d51f54451650e38cdeb34b67702d0dc122a1c34433039fcbddad"
+      url "https://github.com/umi-eng/cli/releases/download/v0.0.5/umi-aarch64-apple-darwin.tar.xz"
+      sha256 "0838ad07fad4cfe8b9420a2e73c3fa3460ebb94a998853fa79ddd50ca2f9b961"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/umi-eng/cli/releases/download/v0.0.4/umi-x86_64-apple-darwin.tar.xz"
-      sha256 "1817090c3548471e4752e97f9b845cc9cdb4dfcda21156b824c558c228d4c61d"
+      url "https://github.com/umi-eng/cli/releases/download/v0.0.5/umi-x86_64-apple-darwin.tar.xz"
+      sha256 "bafb32af060d7165e40042393498a8276148daeab77621737519228a7b5d1bb1"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/umi-eng/cli/releases/download/v0.0.4/umi-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0cc069f8064b1ac04177e823fe110d7b37a83dd68985581569a09ce8cf32a630"
+      url "https://github.com/umi-eng/cli/releases/download/v0.0.5/umi-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3a7bf3ee4c96a612e0918bc39b573ea658b5ca0dc4fafe8bc84292452c85b686"
     end
   end
   license "MPL-2.0"
